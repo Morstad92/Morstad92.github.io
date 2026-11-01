@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy policy for a personal encrypted Google Drive backup utility.">
+  <title>Privacy Policy | Personal Encrypted Drive Backup Utility</title>
+  <style>
+    :root{color-scheme:light; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#f7f9fc; color:#17263b}
+    *{box-sizing:border-box}body{margin:0;line-height:1.7}.wrap{max-width:760px;margin:auto;padding:64px 24px}h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;letter-spacing:-.04em;margin-bottom:12px}h2{font-size:1.14rem;margin:30px 0 8px}p,li{color:#415269}main{background:white;border:1px solid #dfe6ef;border-radius:16px;padding:32px}a{color:#136a8a}a:hover{text-decoration:none}footer{margin-top:24px;font-size:.9rem;color:#63728a}@media(max-width:560px){.wrap{padding:36px 16px}main{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="/">← Home</a></p>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: November 1, 2026</p>
+    <main>
+      <h2>Purpose</h2>
+      <p>This policy describes a privately operated utility that backs up locally encrypted recovery archives to Google Drive using rclone and OAuth. This public website provides information only; it does not perform OAuth sign-in, collect Drive permissions, accept files, or run backups.</p>
+      <h2>Google account data accessed</h2>
+      <p>The utility requests only the Google Drive <code>drive.file</code> scope. With the operator's authorization, it can create, upload, locate, read, download and manage files within that limited app-accessible set. This can involve filenames, file IDs, sizes, timestamps and other file metadata, as well as the bytes transferred. It does not request general access to every Drive file or access to Gmail or Google Contacts.</p>
+      <h2>Use and transfer of data</h2>
+      <p>The utility uses authorized Drive access to upload encrypted backups, verify stored content, and retrieve those archives for recovery. Archives are encrypted on the operator's device with age before upload; decryption is performed locally. Google Drive holds encrypted archive bytes and may process file metadata and service information under Google's own policies.</p>
+      <p>The utility does not sell Google user data or use it for advertising. The website itself does not receive the files or OAuth tokens. Local credentials, tokens and encryption-key material are not intentionally published on the website.</p>
+      <h2>Storage and retention</h2>
+      <p>OAuth credentials and tokens are managed locally through the operator's rclone configuration. Encrypted archives are kept in the operator's authorized Google Drive account until removed under the operator's backup-retention procedures. The operator controls local copies and Google Drive files. Revoking access to the app prevents subsequent authorized Drive operations but does not itself erase files already stored.</p>
+      <h2>Security limitations</h2>
+      <p>Client-side age encryption protects archive contents before transfer, but cannot hide all associated file or account metadata from Google. Security also depends on the operator protecting local OAuth tokens, device access, encryption identities and recovery passphrases. No system can guarantee absolute security.</p>
+      <h2>Website hosting</h2>
+      <p>These static pages are hosted on GitHub Pages. There are no website forms, analytics scripts, advertising scripts or custom cookies in these pages. GitHub may collect technical request information, including IP addresses, according to its own policies when visitors access the website.</p>
+      <h2>Control and questions</h2>
+      <p>The utility is operated for personal use with an authorized Google account, and is not offered as a public service. The operator can review or revoke the app's Google account access through <a href="https://myaccount.google.com/connections">Google Account connections</a> and manage uploaded archives directly in Google Drive. Questions about the utility can be directed to the application operator through their existing communication channel.</p>
+      <h2>Policy updates</h2>
+      <p>This page may be updated if the utility's behavior or data handling changes. The revision date above identifies the published version.</p>
+    </main>
+    <footer><a href="/">Home</a> · Personal encrypted backup utility</footer>
+  </div>
+</body>
+</html>

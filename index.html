@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Information about a personal encrypted Google Drive backup utility using rclone, age, and limited OAuth permissions.">
+  <title>Personal Encrypted Drive Backup Utility</title>
+  <style>
+    :root{color-scheme:light; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#f7f9fc; color:#17263b}
+    *{box-sizing:border-box}body{margin:0;line-height:1.65}.wrap{max-width:760px;margin:auto;padding:64px 24px}header{margin-bottom:32px}h1{font-size:clamp(2rem,5vw,2.9rem);line-height:1.15;letter-spacing:-.04em;margin:0 0 14px}h2{font-size:1.2rem;margin-top:34px}p,li{color:#415269}.lead{font-size:1.12rem}.tag{display:inline-block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#195f7b;margin-bottom:14px}main{background:white;border:1px solid #dfe6ef;border-radius:16px;padding:32px;box-shadow:0 10px 30px #17263b08}a{color:#136a8a}a:hover{text-decoration:none}footer{margin-top:24px;font-size:.9rem;color:#63728a}@media(max-width:560px){.wrap{padding:36px 16px}main{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">Personal backup utility · Application information</span>
+      <h1>Encrypted Google Drive Backup Utility</h1>
+      <p class="lead">A privately operated backup workflow for storing client-side-encrypted recovery archives in Google Drive.</p>
+    </header>
+    <main>
+      <h2>How it works</h2>
+      <p>The utility uses <a href="https://rclone.org/">rclone</a> to transfer backup archives to Google Drive. Backup archives are encrypted locally with <a href="https://age-encryption.org/">age</a> before upload. Encryption keys are managed separately from Google Drive.</p>
+      <h2>Google Drive access</h2>
+      <p>Google OAuth authorizes the utility to use the Google Drive <code>drive.file</code> scope. This limited scope allows the utility to create and access files that it creates or that the user explicitly makes available to the app. The utility does not request blanket access to all files in Google Drive.</p>
+      <p>OAuth client credentials and rclone configuration are managed on the operator's local device, not through this website. Google may receive authentication and file-transfer information as part of providing its services.</p>
+      <h2>About this website</h2>
+      <p>This is a static, public information website. It has no login, file upload, Google sign-in, backup execution, or decryption capability. The website does not process backup files. Its hosting provider may process ordinary visitor request data to deliver the pages.</p>
+      <h2>Use and availability</h2>
+      <p>The utility is for personal backup and recovery operations, not a publicly offered file-storage service. Access is limited to the operator's authorized Google account.</p>
+      <p>For further information about Google data permissions, storage and retention, see the <a href="/privacy.html">Privacy Policy</a>.</p>
+    </main>
+    <footer>Personal encrypted backup utility · <a href="/privacy.html">Privacy Policy</a></footer>
+  </div>
+</body>
+</html>
